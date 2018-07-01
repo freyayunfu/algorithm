@@ -2,7 +2,7 @@ public class MaxDiagnoalSquare {
 
     public static void main(String[] args){
 //        int[][] matrix = {{1,1,0,0},{1,0,1,0},{1,0,0,1},{0,1,1,0}};
-        int[][] matrix = {{1,0,0,00,0,1,1},{0,1,0,0,0,1,0,0},{0,0,1,0,1,0,1,0},{0,0,0,1,1,0,0,1}};
+        int[][] matrix = {{1,0,0,0,0,0,1,1},{0,1,0,0,0,1,0,0},{0,0,1,0,1,0,1,0},{0,0,0,1,1,0,0,1}};
         SoluMaxDiagnoalSquareSolution solution = new SoluMaxDiagnoalSquareSolution();
         System.out.println("Max Diagnoal Square area is "+solution.getMaxDiagnoalSquare(matrix));
     }

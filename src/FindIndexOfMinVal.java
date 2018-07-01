@@ -25,10 +25,9 @@ class FindIndexOfMinValSolution {
         int right = nums.length-1;
         int i = 0;
         while(left+1<right){
-            System.out.println("loop"+i);
+            //the answer will always get returned from here. since left pointer is even left to right -1, then left will never be the answer
             if (nums[right - 1] > nums[right]) {
-                System.out.println("Break in loop"+i);
-                break;
+                return right;
             }
             //保证了不会因为有重复的数字，而一直循环下去。
             right--;
@@ -41,6 +40,8 @@ class FindIndexOfMinValSolution {
             i++;
         }
 
+        //actually this line will never get used if input is valid.
         return nums[left] < nums[right]? left: right;
+
     }
 }
